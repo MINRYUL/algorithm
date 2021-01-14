@@ -16,7 +16,7 @@ struct ICS{
 }ics[MAX];
 
 struct CMS{
-    int sum, before, num;
+    int sum, num;
 }cms[MAX];
 
 bool compare(const ICS& p1, const ICS& p2){
@@ -34,8 +34,6 @@ int main(void) {
         ics[i].color = c; ics[i].size = s; ics[i].index = i;
     }
     sort(ics, ics + n, compare);
-    
-     //- (cms[ics[i].color].before * cms[ics[i].color].num)
     
     for(int i = 0; i < n; i++){
         if(before == ics[i].size){
@@ -55,7 +53,7 @@ int main(void) {
         }
         
         sum += ics[i].size; before = ics[i].size; color = ics[i].color;
-        cms[ics[i].color].sum += ics[i].size; cms[ics[i].color].before = ics[i].size;
+        cms[ics[i].color].sum += ics[i].size;
     }
     
     sort(ics, ics + n, compare2);
