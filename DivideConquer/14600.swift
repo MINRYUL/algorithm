@@ -62,18 +62,4 @@ func main() {
 
 main()
 
-//func main() {
-//    let t = Int(readLine()!)!
-//
-//    for _ in 0..<t {
-//        let n = Int(readLine()!)!
-//
-//        var preorder = Array(readLine()!.split(separator: " ").map{ Int($0)! })
-//        var inorder = Array(readLine()!.split(separator: " ").map{ Int($0)! })
-//
-//        var leftR
-//    }
-//
-//}
-//
-//main()
+//https://profq.tistory.com/24
